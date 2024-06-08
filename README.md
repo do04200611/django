@@ -12,8 +12,14 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 
 
 # Photo
- * django를 성공적으로 접속 했을 때
+ 1. django를 성공적으로 접속 했을 때
 ![image](https://github.com/do04200611/django/assets/74278578/94770ea7-5a8a-42d1-b064-4b3ab164085f)
+2. 로그인 성공 할 때 사진
+![image](https://github.com/do04200611/django/assets/74278578/0422a804-251a-43d4-a3cb-0f6d687c5d66)
+
+3. 내가 만든 투표 앱 사진
+![image](https://github.com/do04200611/django/assets/74278578/21ede7c0-ca70-4d49-b7f9-9b36dfd1ec47)
+
 
 # 도움받은 사이트 <br>
 
