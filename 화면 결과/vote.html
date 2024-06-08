@@ -1,0 +1,45 @@
+
+<h1>어떤 컴퓨터 언어?</h1>
+<ul>
+
+    <li>파이썬</li>
+
+    <li>자바</li>
+
+    <li>c#</li>
+
+    <li>c++</li>
+
+</ul>
+
+<!--라디오 버튼 중 하나를 선택하여 폼을 제출하면, POST 데이터 전송--> 
+
+<form action="/polls/6/vote/" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="r8qRDNMa6AvqMimJ3i81CMPhRRJIeinIbCIPybKr8PPy6WNTxIz6cfOViwCpuu0I">
+    <fieldset>
+        <legend><h1>어떤 컴퓨터 언어?</h1></legend> <!--제목 정의--> 
+        
+        
+        <!----> 
+
+            <input type="radio" name="choice" id="choice1" value="11">
+            <label for="choice1">파이썬</label><br>
+        
+        <!----> 
+
+            <input type="radio" name="choice" id="choice2" value="12">
+            <label for="choice2">자바</label><br>
+        
+        <!----> 
+
+            <input type="radio" name="choice" id="choice3" value="13">
+            <label for="choice3">c#</label><br>
+        
+        <!----> 
+
+            <input type="radio" name="choice" id="choice4" value="14">
+            <label for="choice4">c++</label><br>
+        
+    </fieldset>
+    <input type="submit" value="Vote">
+</form>
