@@ -1,152 +1,119 @@
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+django\mysite> python manage.py shell
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information       
+IPython 8.7.0 -- An enhanced Interactive Python. Type '?' for help. 
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:51:17
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [1]: from polls.models import Cho
+   ...: ice, Question
 
-[08/Jun/2024 15:51:23] "POST /polls/3/vote/ HTTP/1.1" 200 564
-[08/Jun/2024 15:51:37] "GET /polls/1/ HTTP/1.1" 200 835
-[08/Jun/2024 15:51:42] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 15:51:42] "GET /polls/1/results/ HTTP/1.1" 200 44
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [2]: from polls.models import Choice, Question
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:52:38
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [3]: Question.objects.all()
+Out[3]: <QuerySet [<Question: What's up?>, <Question: questions>, <Question: 이순신>, <Question: java>]>
 
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [4]: from django.utils import timezone
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:54:01
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [5]: q = Question(question_text="What's Subject?", pub_date=time 
+   ...: zone.now())
 
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [6]: q.save()
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:54:25
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [7]: q.id
+Out[7]: 5
 
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [8]: q.question_text
+Out[8]: "What's Subject?"
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:54:41
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [9]: q.pub_date
+Out[9]: datetime.datetime(2024, 6, 8, 7, 39, 18, 169620, tzinfo=datetime.timezone.utc)
 
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\views.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [10]: q.question_text = "무슨 과목 좋아해?"
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 15:54:44
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [11]: q.question_text = "What's Subject?"
 
-[08/Jun/2024 15:59:11] "GET /polls/1/results/ HTTP/1.1" 200 262
-[08/Jun/2024 15:59:14] "GET /polls/1/ HTTP/1.1" 200 835
-[08/Jun/2024 15:59:46] "GET /polls/1/ HTTP/1.1" 200 835
-[08/Jun/2024 16:00:07] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 16:00:07] "GET /polls/1/results/ HTTP/1.1" 200 301
-[08/Jun/2024 16:01:34] "GET /polls/1/results/ HTTP/1.1" 200 345
-[08/Jun/2024 16:01:35] "GET /polls/1/results/ HTTP/1.1" 200 345
-[08/Jun/2024 16:01:36] "GET /polls/1/results/ HTTP/1.1" 200 345
-[08/Jun/2024 16:01:42] "GET /polls/1/results/ HTTP/1.1" 200 349
-[08/Jun/2024 16:01:42] "GET /polls/1/results/ HTTP/1.1" 200 349
-[08/Jun/2024 16:01:43] "GET /polls/1/results/ HTTP/1.1" 200 349
-[08/Jun/2024 16:01:50] "GET /polls/1/results/ HTTP/1.1" 200 396
-[08/Jun/2024 16:02:00] "GET /polls/1/results/ HTTP/1.1" 200 345
-[08/Jun/2024 16:02:17] "GET /polls/1/results/ HTTP/1.1" 200 393
-[08/Jun/2024 16:02:17] "GET /polls/1/results/ HTTP/1.1" 200 393
-[08/Jun/2024 16:02:24] "GET /polls/1/results/ HTTP/1.1" 200 389
-[08/Jun/2024 16:02:32] "GET /polls/1/results/ HTTP/1.1" 200 387
-[08/Jun/2024 16:02:44] "GET /polls/1/results/ HTTP/1.1" 200 389
-[08/Jun/2024 16:02:51] "GET /polls/1/results/ HTTP/1.1" 200 388
-[08/Jun/2024 16:02:52] "GET /polls/1/results/ HTTP/1.1" 200 388
-[08/Jun/2024 16:02:53] "GET /polls/1/results/ HTTP/1.1" 200 388
-[08/Jun/2024 16:03:24] "GET /polls/1/results/ HTTP/1.1" 200 423
-[08/Jun/2024 16:03:25] "GET /polls/1/ HTTP/1.1" 200 835
-[08/Jun/2024 16:03:28] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 16:03:28] "GET /polls/1/results/ HTTP/1.1" 200 423
-[08/Jun/2024 16:03:32] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 16:03:32] "GET /polls/1/results/ HTTP/1.1" 200 423
-[08/Jun/2024 16:03:34] "GET /polls/1/ HTTP/1.1" 200 835
-[08/Jun/2024 16:03:35] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 16:03:35] "GET /polls/1/results/ HTTP/1.1" 200 423
-[08/Jun/2024 16:03:36] "GET /polls/1/ HTTP/1.1" 200 835
-C:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\models.py changed, reloading.
-Watching for file changes with StatReloader
-Performing system checks...
+In [12]: q.save()
 
-System check identified no issues (0 silenced).
-June 08, 2024 - 16:04:18
-Django version 5.0.6, using settings 'mysite.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-BREAK.
+In [13]: Question.objects.all()
+Out[13]: <QuerySet [<Question: What's up?>, <Question: questions>, <Question: 이순신>, <Question: java>, <Question: What's Subject?>]>  
 
-[08/Jun/2024 16:04:20] "POST /polls/1/vote/ HTTP/1.1" 200 928
-[08/Jun/2024 16:04:22] "POST /polls/1/vote/ HTTP/1.1" 302 0
-[08/Jun/2024 16:04:22] "GET /polls/1/results/ HTTP/1.1" 200 423
-[08/Jun/2024 16:04:26] "GET /polls/1/ HTTP/1.1" 200 835
+In [14]: from polls.models import Choice, Question
 
- *  복원된 기록 
+In [15]: Question.objects.all()
+Out[15]: <QuerySet [<Question: What's up?>, <Question: questions>, <Question: 이순신>, <Question: java>, <Question: What's Subject?>]>  
 
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> & 'c:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\models.py'
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ^C
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ^C
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ./ssh.sh
-./ssh.sh : './ssh.sh' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 
-이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지 
- 검증한 다음 다시 시도하십시오.
-위치 줄:1 문자:1
-+ ./ssh.sh
-+ ~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (./ssh.sh:String) [], CommandNotFoundExc  
-   eption
-    + FullyQualifiedErrorId : CommandNotFoundException
+In [16]: Question.objects.filter(id=1)
+Out[16]: <QuerySet [<Question: What's up?>]>
 
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ls
+In [17]: Question.objects.filter(question_text__startswith="What")  
+Out[17]: <QuerySet [<Question: What's up?>, <Question: What's Subject?>]>
 
+In [18]: from django.utils import timezone
 
-    디렉터리: C:\Users\kimga\OneDrive\바탕 화면\django\mysite
+In [19]: current_year = timezone.now().year
 
+In [20]: Question.objects.get(pub_date__year=current_year)
+--------------------------------------------------------------------
+MultipleObjectsReturned            Traceback (most recent call last)
+Cell In[20], line 1
+----> 1 Question.objects.get(pub_date__year=current_year)
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----      2024-06-07  오후 11:15                mysite
-d-----      2024-06-08  오전 12:08                polls
--a----      2024-06-08   오후 4:04         143360 db.sqlite3
--a----      2024-06-07  오후 11:14            684 manage.py
-./ssh.sh : './ssh.sh' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램
-이름으로 인식되지 않습니다. 이름이 정확한지 확인하고 경로가 포함된 경우 경로가 올바른지       
- 검증한 다음 다시 시도하십시오.
-위치 줄:1 문자:1
-+ ./ssh.sh
-+ ~~~~~~~~
-    + CategoryInfo          : ObjectNotFound: (./ssh.sh:String) [], CommandNotFoundExc        
-   eption
-    + FullyQualifiedErrorId : CommandNotFoundException
+File ~\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py:87, in BaseManager._get_queryset_methods.<locals>.create_method.<locals>.manager_method(self, *args, **kwargs) 
+     85 @wraps(method)
+     86 def manager_method(self, *args, **kwargs):
+---> 87     return getattr(self.get_queryset(), name)(*args, **kwargs)
 
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> & 'c:\Users\kimga\OneDrive\바탕 화면\django\mysite\polls\models.py'
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ^C
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite> ^C
-PS C:\Users\kimga\OneDrive\바탕 화면\django\mysite>
+File ~\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py:652, in QuerySet.get(self, *args, **kwargs)  
+    648 if not num:
+    649     raise self.model.DoesNotExist(
+    650         "%s matching query does not exist." % self.model._meta.object_name
+    651     )
+--> 652 raise self.model.MultipleObjectsReturned(
+    653     "get() returned more than one %s -- it returned %s!"    
+    654     % (
+    655         self.model._meta.object_name,
+    656         num if not limit or num < limit else "more than %s" % (limit - 1),
+    657     )
+    658 )
+
+MultipleObjectsReturned: get() returned more than one Question -- it returned 5!
+
+In [21]: Question.objects.get(pk=1)
+Out[21]: <Question: What's up?>
+
+In [22]: q = Question.objects.get(pk=1)
+
+In [23]: q.was_published_recently()
+Out[23]: True
+
+In [24]: q = Question.objects.get(pk=1)
+
+In [25]: q.choice_set.all()
+Out[25]: <QuerySet [<Choice: Not much>, <Choice: The sky>]>
+
+In [26]: q.choice_set.create(choice_text="파이썬", votes=0)
+Out[26]: <Choice: 파이썬>
+
+In [27]: q.choice_set.create(choice_text="자바", votes=0)
+Out[27]: <Choice: 자바>
+
+In [28]: c = q.choice_set.create(choice_text="C언어", votes=0)      
+
+In [29]: c.question
+Out[29]: <Question: What's up?>
+
+In [30]: q.choice_set.all()
+Out[30]: <QuerySet [<Choice: Not much>, <Choice: The sky>, <Choice: 파이썬>, <Choice: 자바>, <Choice: C언어>]>
+
+In [31]: q.choice_set.count()
+Out[31]: 5
+
+In [32]: Choice.objects.filter(question__pub_date__year=current_yea 
+    ...: r)
+Out[32]: <QuerySet [<Choice: Not much>, <Choice: The sky>, <Choice: 파이썬>, <Choice: 자바>, <Choice: C언어>]>
+
+In [33]: c = q.choice_set.filter(choice_text__startswith="자바")    
+
+In [34]: c.delete()
+Out[34]: (1, {'polls.Choice': 1})
+
+In [35]:
