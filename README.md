@@ -17,3 +17,5 @@
 https://docs.djangoproject.com/ko/5.0/intro/tutorial03/
 
 ![image](https://github.com/do04200611/django/assets/74278578/8d184099-e8de-4bc4-a0c4-2bb836447ace)
+
+![image](https://github.com/do04200611/django/assets/74278578/7ecc4eb5-9640-4490-9bfe-f00a67158618)
