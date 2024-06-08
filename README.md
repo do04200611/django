@@ -17,7 +17,7 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 2. 로그인 성공 할 때 사진
 ![image](https://github.com/do04200611/django/assets/74278578/0422a804-251a-43d4-a3cb-0f6d687c5d66)
 
-3. 내가 만든 투표 앱 사진
+3. 내가 만든 투표 앱 사진<br>
 ![image](https://github.com/do04200611/django/assets/74278578/af0ac4a7-4ccd-47d8-b21b-028cadcd9e38)
 
 
