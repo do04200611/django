@@ -4,10 +4,10 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=93BDF7&background=203AFF00&random=false&width=435&lines=My+name+is+kimganghyeon)](https://git.io/typing-svg)
 
 
-django를 공부한 코드 모음 레파지토리입니다.
+django를 공부한 코드 모음 레파지토리입니다. <br>
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)<br>
-![django](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=django&logoColor=#092E20)<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white)
+![django](https://img.shields.io/badge/django-3776AB?style=for-the-badge&logo=django&logoColor=#092E20)
 
 
 # github 웹 호스팅 페이지
