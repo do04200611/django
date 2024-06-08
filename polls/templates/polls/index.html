@@ -1,9 +1,16 @@
+<!--static 템플릿 태그는 정적 파일의 절대 URL을 생성합니다.-->
+
+{% load static %} 
+<!--css 파일 연결-->
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+
 {% if latest_question_list %}
-    <ul>
+    <ol>
     {% for question in latest_question_list %}
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
-    </ul>
+    </ol>
 {% else %}
     <p>No polls are available.</p>
     <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
