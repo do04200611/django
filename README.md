@@ -21,8 +21,15 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 ![image](https://github.com/do04200611/django/assets/74278578/af0ac4a7-4ccd-47d8-b21b-028cadcd9e38)
 
 
+
 # 도움받은 사이트 <br>
 
 <a href="https://docs.djangoproject.com/ko/5.0/intro">django를 공부 할 때 배운 사이트</a>
+
+# 장고 관련 자료 사이트
+  |제목                    |   기간         |                                       설명  |
+  |------------------------|---------------|----------------------------------------------|
+  |<a href="https://kim-kang-hyun.tistory.com/34"><img alt="Static Badge" src="https://img.shields.io/badge/django style=flat&logo=django&logoColor=%23092E20&logoSize=10&color=%23092E20">
+</a>|06월|장고란?|
 
 
