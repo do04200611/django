@@ -12,3 +12,6 @@
 ![image](https://github.com/do04200611/django/assets/74278578/e9f8a646-1ed8-4a9e-a8ea-c684f061a51b)
 
 <a href="http://127.0.0.1:8000/admin/">django를 이용한 사이트</a>
+
+![image](https://github.com/do04200611/django/assets/74278578/9da13f82-652e-47ae-b942-efcf5c4a213b)
+https://docs.djangoproject.com/ko/5.0/intro/tutorial03/
