@@ -34,5 +34,6 @@ https://docs.djangoproject.com/ko/5.0/intro/tutorial03/
 ![image](https://github.com/do04200611/django/assets/74278578/7ecc4eb5-9640-4490-9bfe-f00a67158618)
 ![image](https://github.com/do04200611/django/assets/74278578/91d46ca4-7949-4ad4-9cb7-e38f7cdbe634)
 
-# 도움받은 사이트
+# 도움받은 사이트 <br>
+
 https://docs.djangoproject.com/ko/5.0/intro/tutorial03/
