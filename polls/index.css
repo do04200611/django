@@ -1,0 +1,56 @@
+ /*이미지 전체 설정 */
+img{
+    margin: auto;  /*이미지  적절한 여백 크기 설정 */
+   display: block; /*이미지 양옆에 줄바꿔서 지정 */ 
+}
+
+ /*페이지 전체 설정 */
+body{
+    background-color : #70D2B4; /*배경 색 설정 */
+
+}
+
+/*header단 설정 */
+.header{
+  text-align: center; /*글자 가운데 정렬 */
+}
+
+/*footer 설정 */
+.footer{
+  text-align: center;/*글자 가운데 정렬 */
+}
+
+/*페이지 디자이너 관련 정보 설정 */
+#page_information{
+    align-items: center; /*세로축을 가운데로 정렬*/
+    text-align: center; /*글자 가운데 정렬 */
+    margin-right: 15px; /*오른쪽 여백을 15픽셀로 지정*/
+}
+
+/*표 설정 */
+table, td, th {
+  background-color : #FFA500;  /*표 배경 설정 */
+  margin-left:auto; /*왼쪽 여백을 적절하게 설정 */
+  margin-right:auto; /*오른쪽 여백을 적절하게 설정 */
+  border-collapse : collapse; /*표의 테두리 사이의 간격을 없앤다.*/
+  border : 1px solid black; /*테두리를 1픽셀, 검은 색, 일반적인 테두리로 지정 */
+}
+
+/*google-font 설정 */
+
+.nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif; /*글꼴 스타일로 지정*/
+  font-weight: 1000; /*글자 굴기 1000픽셀로 지정*/
+  font-style: normal; /*글자 스타일을 보통 글자 형태로 지정 */
+  font-size: 20px;  /*글자 크기 20픽셀로 설정 */
+}
+
+/*google-font 설정 */
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif; /*글꼴 스타일로 지정*/
+  font-optical-sizing: auto; /*문자의 두께가 글꼴의 크기에 따라 변경되는 것을 자동으로 조절함 */
+  font-weight: weight; /*글꼴 두께를 weight로 설정 */
+  font-style: normal; /*글자 스타일을 보통 글자 형태로 지정 */
+  font-size: 30px;  /*글자 크기 30픽셀로 설정 */
+}
