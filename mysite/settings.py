@@ -1,3 +1,5 @@
+# Django 설정을 모듈 변수로 표현한 보통의 Python 모듈입니다.
+
 """
 Django settings for mysite project.
 
@@ -29,8 +31,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+#INSTALLED_APPS : 앱의 구성 클래스에 대한 코드 
 INSTALLED_APPS = [
+    
+    #polls/apps.py 파일 내에 있는 PollsConfig 클래스다.
+
     "polls.apps.PollsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
