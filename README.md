@@ -17,6 +17,6 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 
 # 도움받은 사이트 <br>
 
-<a href="http://127.0.0.1:8000/admin/](https://docs.djangoproject.com/ko/5.0/intro/tutorial03/">django를 공부 할 때 배운 사이트</a>
+<a href="https://docs.djangoproject.com/ko/5.0/intro/tutorial03/">django를 공부 할 때 배운 사이트</a>
 
 
