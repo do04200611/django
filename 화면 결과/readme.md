@@ -13,7 +13,7 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 
 
 # Photo
-1. 투표 결과 화면 사진
+1. 투표 결과 화면 사진<br>
 ![image](https://github.com/do04200611/django/assets/74278578/e2ca0997-2c31-470e-b497-795cb5c9266b)
 
 2. 내가 만든 투표 앱 사진<br>
