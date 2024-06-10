@@ -20,6 +20,8 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 3. 내가 만든 투표 앱 사진<br>
 <a href="https://do04200611.github.io/django/%ED%99%94%EB%A9%B4%20%EA%B2%B0%EA%B3%BC/Main.html"><img src="https://github.com/do04200611/django/assets/74278578/af0ac4a7-4ccd-47d8-b21b-028cadcd9e38">
 
+# site
+<a href="https://do04200611.github.io/django/"> 사이트 결과</a>
 
 
 # 도움받은 사이트 <br>
