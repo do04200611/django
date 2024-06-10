@@ -1,0 +1,23 @@
+li a {
+    color: yellow;
+}
+
+body {
+    background: #70D2B4; /*배경 색 지정*/
+    /* background-image:url("images/background.png"); 배경 이미지 출력 */
+    background-position: center center; /*위치 가운데 정렬*/
+    block-size: 50% 50%;
+}
+.main{
+    text-align: center;
+    display: inline-block; /*글자 가운데 정렬 */
+
+}
+
+h1 h4{
+    text-align: center; 
+}
+
+legend{
+    text-align: center;
+}
