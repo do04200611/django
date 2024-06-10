@@ -1,45 +1,27 @@
+<!--static 템플릿 태그는 정적 파일의 절대 URL을 생성합니다.-->
 
-<h1>어떤 컴퓨터 언어?</h1>
-<ul>
+ 
+<!--css 파일 연결-->
+<link rel="stylesheet" href="/static/polls/style.css">
 
-    <li>파이썬</li>
+<!--메인 화면으로 연결-->
+<a href="/polls/"> 홈</a>
 
-    <li>자바</li>
+<!--투표의 제목 출력-->
+<h1>한국에서 가장 훌륭한 위인은?</h1>
+<ul> <!--ul 태그 시작-->
 
-    <li>c#</li>
-
-    <li>c++</li>
-
-</ul>
+</ul> <!--ul 태그 종료-->
 
 <!--라디오 버튼 중 하나를 선택하여 폼을 제출하면, POST 데이터 전송--> 
 
-<form action="/polls/6/vote/" method="post">
-    <input type="hidden" name="csrfmiddlewaretoken" value="r8qRDNMa6AvqMimJ3i81CMPhRRJIeinIbCIPybKr8PPy6WNTxIz6cfOViwCpuu0I">
+<form action="/polls/8/vote/" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="5OhMvxbVDx08aAYPC2bUdzzgo2saKOzXZdjtjYnXpcTUZazjYJn2HCLLBVv7XTVb"> <!--공격자가 의도한 행위를 403에러를 통해서 방지-->
     <fieldset>
-        <legend><h1>어떤 컴퓨터 언어?</h1></legend> <!--제목 정의--> 
+        <legend><h4>한국에서 가장 훌륭한 위인은?</h4></legend> <!--제목 정의--> 
         
         
-        <!----> 
+    </fieldset>         <!--fieldset 태그 종료--> 
+    <input type="submit" value="Vote"> <!--투표 완료 버튼 출력--> 
 
-            <input type="radio" name="choice" id="choice1" value="11">
-            <label for="choice1">파이썬</label><br>
-        
-        <!----> 
-
-            <input type="radio" name="choice" id="choice2" value="12">
-            <label for="choice2">자바</label><br>
-        
-        <!----> 
-
-            <input type="radio" name="choice" id="choice3" value="13">
-            <label for="choice3">c#</label><br>
-        
-        <!----> 
-
-            <input type="radio" name="choice" id="choice4" value="14">
-            <label for="choice4">c++</label><br>
-        
-    </fieldset>
-    <input type="submit" value="Vote">
-</form>
+</form> <!--form 태그 종료--> 
