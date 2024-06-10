@@ -1,0 +1,32 @@
+<!--static 템플릿 태그는 정적 파일의 절대 URL을 생성합니다.-->
+
+
+{% load static %} 
+<!--css 파일 연결-->
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
+
+<!--투표 결과 화면-->
+
+<!--메인 화면으로 연결-->
+<a href="{%url 'polls:index'%}"> 홈</a>
+
+
+<!--투표 제목-->
+<h1>{{ question.question_text}} </h1>
+<main class="main">  <!--main 태그 시작--> 
+    <ol> <!--ul 태그 시작-->
+        {% for choice in question.choice_set.all%}
+            <li> <!--li 태그 시작--> 
+                {{ choice.choice_text}} -- {{choice.votes}} 
+                표 {{choice.vote|pluralize}}
+            </li> <!--li 태그 종료--> 
+        {%endfor%}        
+    </ol> <!--ul 태그 종료-->
+</main> <br> <!--main 태그 종료 및 줄바꿈--> 
+
+<footer> <!--footer 태그 시작--> 
+    <!--재투표 할 지 여부 결정 클릭시 detail.html로 이동-->
+    <a href="{%url 'polls:detail' question.id%}"> 재투표 하시겠어요?</a>
+
+</footer> <!--footer 태그 종료--> 
