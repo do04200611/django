@@ -27,10 +27,10 @@ django를 공부한 코드 모음 레파지토리입니다. <br>
 # 도움받은 사이트 <br>
 
 <a href="https://docs.djangoproject.com/ko/5.0/intro">django를 공부 할 때 배운 사이트</a>
-
 # 장고 관련 자료 사이트
   |제목                    |   기간         |                                       설명  |
   |------------------------|---------------|----------------------------------------------|
   |<a href="https://kim-kang-hyun.tistory.com/34"><img alt="Static Badge" src="https://img.shields.io/badge/django-3776AB?style=for-the-badge&logo=django&logoColor=#092E20"> </a>|06월|장고가 무엇이고, 특징 설명|
+ |<a href="https://kim-kang-hyun.tistory.com/35"><img alt="Static Badge" src="https://img.shields.io/badge/django-3776AB?style=for-the-badge&logo=django&logoColor=#092E20"> </a>|06월|장고의 기초 문법 설명|
 
 
