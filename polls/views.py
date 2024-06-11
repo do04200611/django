@@ -15,15 +15,29 @@ from .models import Choice, Question
 
 # Create your views here.
 
+#뷰를 업데이트 하는 기능
+
+# index() 뷰 하나를 호출했을 때, 시스템에 저장된 최소한 5 개의 투표 질문이 콤마로 분리되어, 발행일에 따라 출력됩니다.
+
 def index(request):
-    return HttpResponse("안녕하십니까!")
+    latest_question_list = Question.objects.order_by("-pub_date")[:4]
+    template = loader.get_template("polls/index.html")
+    context = {
+        "latest_question_list": latest_question_list,
+    }
+    return HttpResponse(template.render(context, request))
+
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
+   
+    #연결할 페이지 지정
     return render(request, "polls/detail.html", {"question": question})
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
+    
+     #연결할 페이지 지정
     return render(request, "polls/results.html", {"question": question})
 
 
@@ -58,17 +72,3 @@ def vote(request, question_id):
         
         return HttpResponseRedirect(reverse("polls:results", args=(question.id,)))
     return HttpResponse("You're voting on question %s." % question_id)
-
-
-#뷰를 업데이트 하는 기능
-
-# index() 뷰 하나를 호출했을 때, 시스템에 저장된 최소한 5 개의 투표 질문이 콤마로 분리되어, 발행일에 따라 출력됩니다.
-
-def index(request):
-    latest_question_list = Question.objects.order_by("-pub_date")[:4]
-    template = loader.get_template("polls/index.html")
-    context = {
-        "latest_question_list": latest_question_list,
-    }
-    return HttpResponse(template.render(context, request))
-
